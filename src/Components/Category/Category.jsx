@@ -8,7 +8,7 @@ import Button from '../Button/Button';
 const Category = () => {
   const renderCard = category.map((card) => {
     return (
-      <div className="flex-1 ">
+      <div className="flex-1 basis-[800px]">
         <div className="w-full min-h-[20vh] relative -mb-10">
           <img src={card.image} className="absolute bottom-0" />
         </div>
@@ -28,7 +28,7 @@ const Category = () => {
         <Heading spanText={'Shop'} text={'By Category'} />
 
         {/* Category Card */}
-        <div className="flex gap-10 mt-15">{renderCard}</div>
+        <div className="flex flex-wrap gap-10 md:mt-30">{renderCard}</div>
       </div>
     </section>
   );
